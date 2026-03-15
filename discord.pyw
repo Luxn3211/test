@@ -165,3 +165,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    requests.post(WEBHOOK_URL, json={"content": f"✅ Script executed on {platform.node()}"})
